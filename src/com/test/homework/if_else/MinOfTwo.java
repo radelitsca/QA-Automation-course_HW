@@ -18,8 +18,8 @@ public class MinOfTwo {
 
     private static void printMinOfTwo(int a, int b) {
         if (a>b)
-            System.out.println(a);
-        else
             System.out.println(b);
+        else
+            System.out.println(a);
     }
 }
