@@ -15,8 +15,11 @@ public class SSquare {
         }
     }
     public static void PrintSeveralTimes(int a){
-        for (int k = 1; k <=a; k++) {
+        int k = 1;
+        while (k<=a) {
             System.out.print('S');
+            k++;
         }
+
     }
 }
