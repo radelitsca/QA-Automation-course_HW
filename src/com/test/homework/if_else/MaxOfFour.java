@@ -19,13 +19,14 @@ public class MaxOfFour {
     }
 
     private static void printMaxOfFour(int a, int b, int c, int d) {
-    if (a>b & a>c & a>d)
-        System.out.println(a);
-    else if (b>a & b>c & b>d)
-        System.out.println(b);
-    else if (c>a & c>b & c>d)
-         System.out.println(c);
-    else
-         System.out.println(d);
+        if (a >= b & a >= c & a >= d)
+            System.out.println(a);
+        else if (b >= a & b >= c & b >= d)
+            System.out.println(b);
+        else if (c >= a & c >= b & c >= d)
+            System.out.println(c);
+        else {
+            System.out.println(d);
+        }
     }
 }
