@@ -58,10 +58,8 @@ public class Cat {
     }
 
     public boolean fight(Cat anotherCat) {
-        int strength1;
-        strength1 = (this.getAge()) * 2 + (this.getWeight() * 5);
-        int strength2;
-        strength2 = (anotherCat.getAge()) * 3 + (anotherCat.getWeight() * 5);
+        int strength1 = (this.getAge()) * 2 + (this.getWeight() * 5);
+        int strength2 = (anotherCat.getAge()) * 3 + (anotherCat.getWeight() * 5);
 
         return strength1 >= strength2;
     }
