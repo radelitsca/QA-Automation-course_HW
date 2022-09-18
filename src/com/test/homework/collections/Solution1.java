@@ -16,10 +16,9 @@ public class Solution1 {
         list.add("test3");
         list.add("test4");
         list.add("test5");
-
         System.out.println(list.size());
 
-        for (String s: list) {
+        for (String s : list) {
             System.out.println(s);
         }
     }

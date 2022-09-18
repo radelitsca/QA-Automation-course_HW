@@ -2,7 +2,6 @@ package com.test.homework.collections;
 
 import java.util.*;
 
-import static jdk.internal.org.objectweb.asm.Type.getType;
 
 public class Solution13 {
     /*
@@ -34,7 +33,7 @@ public class Solution13 {
     }
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map) {
-        HashMap<String, String> copy = new HashMap<String, String>(map);
+        HashMap<String, String> copy = new HashMap<>(map);
         for (Map.Entry<String, String> element : copy.entrySet()) {
             int count = 0;
             for (Map.Entry<String, String> copyElement : copy.entrySet()) {
@@ -50,7 +49,7 @@ public class Solution13 {
     }
 
     public static void removeItemFromMapByValue(HashMap<String, String> map, String value) {
-        HashMap<String, String> copy = new HashMap<String, String>(map);
+        HashMap<String, String> copy = new HashMap<>(map);
         for (Map.Entry<String, String> pair : copy.entrySet()) {
             if (pair.getValue().equals(value))
                 map.remove(pair.getKey());

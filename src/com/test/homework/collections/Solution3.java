@@ -21,9 +21,10 @@ public class Solution3 {
             String s = scanner.nextLine();
             list.add(s);
         }
-        int minLength = 0;
+        int minLength=0;
         for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i + 1).length() <= list.get(i).length()) {
+            minLength = list.get(i).length();
+            if (list.get(i + 1).length() <= minLength) {
                 minLength = list.get(i + 1).length();
             }
         }
