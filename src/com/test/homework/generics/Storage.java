@@ -5,7 +5,7 @@ import java.util.List;
 
 class Storage<T> {
 
-    public List<T> array = new ArrayList<>();
+    private List<T> array = new ArrayList<>();
 
     public void put(T element) {
         array.add(element);
@@ -16,5 +16,4 @@ class Storage<T> {
         array.remove(array.size() - 1);
         return last;
     }
-
 }
